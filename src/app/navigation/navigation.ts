@@ -18,21 +18,21 @@ export const navigation: FuseNavigation[] = [
                         id        : 'edition',
                         title     : 'Edition',
                         type      : 'item',
-                        url       : '/apps/e-commerce/products',
+                        url       : '/pages/e-commerce/products',
                         exactMatch: true
                     },
                     {
                         id        : 'vieprivee',
                         title     : 'Vie Privee',
                         type      : 'item',
-                        url       : '/apps/e-commerce/products/1/printed-dress',
+                        url       : '/pages/e-commerce/products/1/printed-dress',
                         exactMatch: true
                     },
                     {
                         id        : 'recherche',
                         title     : 'Recherche',
                         type      : 'item',
-                        url       : '/apps/e-commerce/orders',
+                        url       : '/pages/e-commerce/orders',
                         exactMatch: true
                     }
                 ]
@@ -57,7 +57,7 @@ export const navigation: FuseNavigation[] = [
                 translate: 'NAV.SAMPLE.TITLE',
                 type     : 'item',
                 icon     : 'group',
-                url      : '/association',
+                url      : '/pages/association',
             },
             {
                 id       : 'entreprise',
@@ -65,7 +65,7 @@ export const navigation: FuseNavigation[] = [
                 translate: 'NAV.SAMPLE.TITLE',
                 type     : 'item',
                 icon     : 'business',
-                url      : '/entreprise',
+                url      : '/pages/entreprise',
             },
             {
                 id       : 'professionel',
@@ -73,7 +73,7 @@ export const navigation: FuseNavigation[] = [
                 translate: 'NAV.SAMPLE.TITLE',
                 type     : 'item',
                 icon     : 'work',
-                url      : '/professionel',
+                url      : '/pages/professionel',
             },
             {
                 id       : 'e-commerce',
@@ -86,28 +86,28 @@ export const navigation: FuseNavigation[] = [
                         id        : 'products',
                         title     : 'Products',
                         type      : 'item',
-                        url       : '/apps/e-commerce/products',
+                        url       : '/pages/e-commerce/products',
                         exactMatch: true
                     },
                     {
                         id        : 'productDetail',
                         title     : 'Product Detail',
                         type      : 'item',
-                        url       : '/apps/e-commerce/products/1/printed-dress',
+                        url       : '/pages/e-commerce/products/1/printed-dress',
                         exactMatch: true
                     },
                     {
                         id        : 'orders',
                         title     : 'Orders',
                         type      : 'item',
-                        url       : '/apps/e-commerce/orders',
+                        url       : '/pages/e-commerce/orders',
                         exactMatch: true
                     },
                     {
                         id        : 'orderDetail',
                         title     : 'Order Detail',
                         type      : 'item',
-                        url       : '/apps/e-commerce/orders/1',
+                        url       : '/pages/e-commerce/orders/1',
                         exactMatch: true
                     }
                 ]
