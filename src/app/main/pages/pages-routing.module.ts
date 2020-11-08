@@ -15,7 +15,9 @@ const routes: Routes = [
     children:[
       {path: '', redirectTo: 'pages', pathMatch: 'full'},
       {path: 'sport', redirectTo: 'sport', pathMatch: 'full'}
-    ]}
+    ]},
+    { path : 'chat', loadChildren: './chat/chat.module#ChatModule'
+  },
 ];
 
 

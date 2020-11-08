@@ -7,12 +7,12 @@ export const locale = {
                 'TITLE': 'Sample',
                 'BADGE': '25'
             },
-            'PROFIL' : 'Profil',
-            'STORE' : 'Store',
+            'PROFIL' : 'Profile',
+            'STORE' : 'Magasin',
             'CONFIGURATION' : 'Configuration',
             'ASSOCIATION' : 'Association',
-            'PROFESSIONAL':'Professional',
-            'BUSINESS' : 'Business',
+            'PROFESSIONAL':'Professionel',
+            'BUSINESS' : 'Entreprise',
             'ECOMMERCE':'Commerce',
             'SPORT':'Sport',
             

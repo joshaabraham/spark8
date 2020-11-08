@@ -22,13 +22,13 @@ export class EcommerceOrdersComponent implements OnInit, OnDestroy
     dataSource: FilesDataSource | null;
     displayedColumns = ['id', 'reference', 'customer', 'total', 'payment', 'status', 'date'];
 
-    @ViewChild(MatPaginator)
+    @ViewChild(MatPaginator,{static: false})
     paginator: MatPaginator;
 
-    @ViewChild('filter')
+    @ViewChild('filter',{static: false})
     filter: ElementRef;
 
-    @ViewChild(MatSort)
+    @ViewChild(MatSort,{static: false})
     sort: MatSort;
 
     // Private

@@ -22,13 +22,13 @@ export class EcommerceProductsComponent implements OnInit
     dataSource: FilesDataSource | null;
     displayedColumns = ['id', 'image', 'name', 'category', 'price', 'quantity', 'active'];
 
-    @ViewChild(MatPaginator)
+    @ViewChild(MatPaginator,{static: false})
     paginator: MatPaginator;
 
-    @ViewChild(MatSort)
+    @ViewChild(MatSort,{static: false})
     sort: MatSort;
 
-    @ViewChild('filter')
+    @ViewChild('filter',{static: false})
     filter: ElementRef;
 
     // Private
