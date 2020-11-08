@@ -14,10 +14,9 @@ const routes: Routes = [
   { path: '', component: PagesComponent,
     children:[
       {path: '', redirectTo: 'pages', pathMatch: 'full'},
-      {path: 'sport', redirectTo: 'sport', pathMatch: 'full'}
+      {path: 'sport', redirectTo: 'sport', pathMatch: 'full'},
+      { path: 'chat', loadChildren: () => import('./chat/chat.module').then(m => m.ChatModule)},
     ]},
-    { path : 'chat', loadChildren: './chat/chat.module#ChatModule'
-  },
 ];
 
 
