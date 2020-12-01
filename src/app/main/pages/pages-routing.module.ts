@@ -16,6 +16,8 @@ const routes: Routes = [
       {path: '', redirectTo: 'pages', pathMatch: 'full'},
       {path: 'sport', redirectTo: 'sport', pathMatch: 'full'},
       { path: 'chat', loadChildren: () => import('./chat/chat.module').then(m => m.ChatModule)},
+      { path: 'contacts', loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule)},
+      { path: 'academy', loadChildren: () => import('./academy/academy.module').then(m => m.AcademyModule)},
     ]},
 ];
 
