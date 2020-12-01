@@ -3,11 +3,12 @@ export const locale = {
     data: {
         'NAV': {
             'APPLICATIONS': 'Applications',
-            'SAMPLE'        : {
-                'TITLE': 'Sample',
-                'BADGE': '25'
-            },
+            // 'SAMPLE'        : {
+            //     'TITLE': 'Sample',
+            //     'BADGE': '25'
+            // },
             'PROFIL' : 'Profil',
+            'JOUEUR' : 'Joueur',
             'STORE' : 'Store',
             'CONFIGURATION' : 'Configuration',
             'ASSOCIATION' : 'Association',
@@ -15,6 +16,8 @@ export const locale = {
             'BUSINESS' : 'Business',
             'ECOMMERCE':'Commerce',
             'SPORT':'Sport',
+            'EQUIPE':'Equipe',
+            'ENTREPRISE':'Entreprise',
             
         }
     }

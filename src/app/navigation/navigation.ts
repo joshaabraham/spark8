@@ -2,15 +2,23 @@ import { FuseNavigation } from '@fuse/types';
 
 export const navigation: FuseNavigation[] = [
     {
-        id       : 'applications',
-        title    : 'Applications',
-        translate: 'NAV.APPLICATIONS',
+        id       : 'profil',
+        title    : 'Profil',
+        translate: 'NAV.PROFIL',
         type     : 'group',
         children : [
             {
-                id       : 'profil',
-                title    : 'Profil',
-                translate: 'NAV.PROFIL',
+                id       : 'joueur',
+                title    : 'Joueur',
+                translate: 'NAV.JOUEUR',
+                type     : 'item',
+                icon     : 'work',
+                url      : '/pages/professionel',
+            }, 
+            {
+                id       : 'configuration',
+                title    : 'Configuration',
+                translate: 'NAV.CONFIGURATION',
                 type     : 'collapsable',
                 icon     : 'person',
                 children : [
@@ -19,6 +27,14 @@ export const navigation: FuseNavigation[] = [
                         title     : 'Edition',
                         type      : 'item',
                         url       : '/pages/e-commerce/products',
+                        exactMatch: true
+                    },
+                    {
+                        id        : 'configuration',
+                        title     : 'Configuration',
+                        translate : 'NAV.CONFIGURATION',
+                        type      : 'item',
+                        url       : '/pages/configuration',
                         exactMatch: true
                     },
                     {
@@ -36,17 +52,57 @@ export const navigation: FuseNavigation[] = [
                         exactMatch: true
                     }
                 ]
-            },
+            },        
             {
-                id       : 'sample',
-                title    : 'Sample',
-                translate: 'NAV.SAMPLE.TITLE',
+                id       : 'professionel',
+                title    : 'Professionel',
+                translate: 'NAV.PROFESSIONAL',
+                type     : 'item',
+                icon     : 'work',
+                url      : '/pages/professionel',
+            }
+        ]
+    },
+    {
+        id       : 'sport',
+        title    : 'Sport',
+        translate: 'NAV.SPORT',
+        type     : 'group',
+        children : [
+            {
+                id       : 'profil',
+                title    : 'Profil',
+                translate: 'NAV.PROFIL',
+                type     : 'collapsable',
+                icon     : 'person',
+                children : [
+                    {
+                        id        : 'edition',
+                        title     : 'Edition',
+                        type      : 'item',
+                        url       : '/pages/e-commerce/products',
+                        exactMatch: true
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        id       : 'equipe',
+        title    : 'Equipe',
+        translate: 'NAV.EQUIPE',
+        type     : 'group',
+        children : [
+            {
+                id       : 'equipe',
+                title    : 'Equipe',
+                translate: 'NAV.EQUIPE',
                 type     : 'item',
                 icon     : 'email',
-                url      : '/sample',
+                url      : '/pages/equipe',
                 badge    : {
                     title    : '25',
-                    translate: 'NAV.SAMPLE.BADGE',
+                    translate: 'NAV.EQUIPE',
                     bg       : '#F44336',
                     fg       : '#FFFFFF'
                 }
@@ -54,7 +110,7 @@ export const navigation: FuseNavigation[] = [
             {
                 id       : 'association',
                 title    : 'Association',
-                translate: 'NAV.SAMPLE.TITLE',
+                translate: 'NAV.ASSOCIATION',
                 type     : 'item',
                 icon     : 'group',
                 url      : '/pages/association',
@@ -62,22 +118,22 @@ export const navigation: FuseNavigation[] = [
             {
                 id       : 'entreprise',
                 title    : 'Entreprise',
-                translate: 'NAV.SAMPLE.TITLE',
+                translate: 'NAV.ENTREPRISE',
                 type     : 'item',
                 icon     : 'business',
                 url      : '/pages/entreprise',
-            },
+            }
+        ]
+    },
+    {
+        id       : 'commerce',
+        title    : 'Commerce',
+        translate: 'NAV.ECOMMERCE',
+        type     : 'group',
+        children : [
             {
-                id       : 'professionel',
-                title    : 'Professionel',
-                translate: 'NAV.SAMPLE.TITLE',
-                type     : 'item',
-                icon     : 'work',
-                url      : '/pages/professionel',
-            },
-            {
-                id       : 'e-commerce',
-                title    : 'E-Commerce',
+                id       : 'vendre',
+                title    : 'Vendre',
                 translate: 'NAV.ECOMMERCE',
                 type     : 'collapsable',
                 icon     : 'shopping_cart',
@@ -108,6 +164,22 @@ export const navigation: FuseNavigation[] = [
                         title     : 'Order Detail',
                         type      : 'item',
                         url       : '/pages/e-commerce/orders/1',
+                        exactMatch: true
+                    }
+                ]
+            },
+            {
+                id       : 'acheter',
+                title    : 'Acheter',
+                translate: 'NAV.ECOMMERCE',
+                type     : 'collapsable',
+                icon     : 'person',
+                children : [
+                    {
+                        id        : 'edition',
+                        title     : 'Edition',
+                        type      : 'item',
+                        url       : '/pages/e-commerce/products',
                         exactMatch: true
                     }
                 ]
