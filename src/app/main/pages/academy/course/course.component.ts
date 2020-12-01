@@ -6,7 +6,7 @@ import { fuseAnimations } from '@fuse/animations';
 import { FusePerfectScrollbarDirective } from '@fuse/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive';
 import { FuseSidebarService } from '@fuse/components/sidebar/sidebar.service';
 
-import { AcademyCourseService } from 'app/main/apps/academy/course.service';
+import { AcademyCourseService } from 'app/main/pages/academy/course.service';
 
 @Component({
     selector     : 'academy-course',

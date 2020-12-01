@@ -18,6 +18,7 @@ export const locale = {
             'SPORT':'Sport',
             'EQUIPE':'Equipe',
             'ENTREPRISE':'Entreprise',
+            'CONTACTS':'Contacts',
             
         }
     }

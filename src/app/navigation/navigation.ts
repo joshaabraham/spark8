@@ -60,6 +60,14 @@ export const navigation: FuseNavigation[] = [
                 type     : 'item',
                 icon     : 'work',
                 url      : '/pages/professionel',
+            },
+            {
+                id       : 'contacts',
+                title    : 'Contacts',
+                translate: 'NAV.CONTACTS',
+                type     : 'item',
+                icon     : 'work',
+                url      : '/pages/contacts',
             }
         ]
     },
