@@ -5,10 +5,10 @@ import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, Mat
 
 import { FuseSharedModule } from '@fuse/shared.module';
 
-import { AcademyCoursesComponent } from 'app/main/apps/academy/courses/courses.component';
-import { AcademyCourseComponent } from 'app/main/apps/academy/course/course.component';
-import { AcademyCoursesService } from 'app/main/apps/academy/courses.service';
-import { AcademyCourseService } from 'app/main/apps/academy/course.service';
+import { AcademyCoursesComponent } from 'app/main/pages/academy/courses/courses.component';
+import { AcademyCourseComponent } from 'app/main/pages/academy/course/course.component';
+import { AcademyCoursesService } from 'app/main/pages/academy/courses.service';
+import { AcademyCourseService } from 'app/main/pages/academy/course.service';
 import { FuseSidebarModule } from '@fuse/components';
 
 const routes = [
