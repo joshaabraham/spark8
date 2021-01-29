@@ -6,6 +6,11 @@ import { takeUntil } from 'rxjs/internal/operators';
 import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations';
 import { DataService } from 'app/Modules/data/data-generic-crud.service';
+import { TableMap } from 'app/Models/table-map';
+import { Logins } from 'models/Logins';
+
+
+
 
 @Component({
     selector     : 'register',
@@ -58,6 +63,8 @@ export class RegisterComponent implements OnInit, OnDestroy
      */
     ngOnInit(): void
     {
+            console.log('debut : register init');
+
         this.registerForm = this._formBuilder.group({
             name           : ['', Validators.required],
             email          : ['', [Validators.required, Validators.email]],
@@ -72,6 +79,12 @@ export class RegisterComponent implements OnInit, OnDestroy
             .subscribe(() => {
                 this.registerForm.get('passwordConfirm').updateValueAndValidity();
             });
+
+            const user = new Logins ('test1@test.com','123','Admin');
+   
+
+             //this._generic_crud.create<Logins>(Logins, user, TableMap.Login);
+            // console.log('debut : register init');
     }
 
     /**
@@ -86,7 +99,7 @@ export class RegisterComponent implements OnInit, OnDestroy
 
     onSubmit():void  {
         console.warn(this.registerForm.value);
-        this._generic_crud.create('Login', this.registerForm.value);
+        this._generic_crud.createPromise<Logins>(Logins, this.registerForm.value, TableMap.Login);
     }
 }
 

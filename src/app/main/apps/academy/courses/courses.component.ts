@@ -4,7 +4,7 @@ import { takeUntil } from 'rxjs/operators';
 
 import { fuseAnimations } from '@fuse/animations';
 
-import { AcademyCoursesService } from 'app/main/pages/academy/courses.service';
+import { AcademyCoursesService } from 'app/main/apps/academy/courses.service';
 
 @Component({
     selector   : 'academy-courses',

@@ -3,6 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations';
+import { DataService } from 'app/Modules/data/data-generic-crud.service';
+import { TableMap } from 'app/Models/table-map';
+import { Logins } from 'models/Logins';
 
 @Component({
     selector     : 'login',
@@ -23,7 +26,8 @@ export class LoginComponent implements OnInit
      */
     constructor(
         private _fuseConfigService: FuseConfigService,
-        private _formBuilder: FormBuilder
+        private _formBuilder: FormBuilder,
+        private _dataService: DataService
     )
     {
         // Configure the layout
@@ -65,7 +69,9 @@ export class LoginComponent implements OnInit
      * 
      */
     onSubmit(): void {
+
+        // `authenticationusername=${this.loginData.username}&password=${this.loginData.password}`
         console.warn(this.loginForm.value);
-        
+        this._dataService.read<Logins>(Logins, `?email=${this.loginForm.value.email}&password=${this.loginForm.value.password}`, TableMap.Login);
     }
 }

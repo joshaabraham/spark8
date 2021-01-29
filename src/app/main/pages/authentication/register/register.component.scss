@@ -4,8 +4,10 @@ register {
 
     #register {
         width: 100%;
-        background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
-        background-size: cover;
+        background: url('/assets/images/backgrounds/dark-material-bg.png') no-repeat;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center; 
 
         #register-form-wrapper {
             flex: 1 0 auto;

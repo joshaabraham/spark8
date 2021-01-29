@@ -7,6 +7,7 @@ import { } from '../app/main/pages/pages.component'
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./main/pages/authentication/authentication.module').then(m => m.AuthenticationModule) },
   { path: 'pages', loadChildren: () => import('./main/pages/pages.module').then(m => m.PagesModule) },
+  { path: 'apps', loadChildren: () => import('./main/apps/apps.module').then(m => m.AppsModule) },
  // { path: '**', component: PageNotFoundComponent }
 ];
 

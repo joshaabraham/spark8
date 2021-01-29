@@ -20,6 +20,7 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { AuthInterceptor } from './Services/AuthInterceptorService/AuthInterceptor.service';
 import { AppRoutingModule } from './app-routing.module';
+import { DataModule } from './Modules/data/data.module';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
+        DataModule,
        // RouterModule.forRoot(appRoutes),
 
         TranslateModule.forRoot(),

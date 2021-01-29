@@ -66,54 +66,54 @@ export class DataService {
          */
       
         // CREATE
-        create<T>(model: T | any, objToCreate?: T | any): void {
-          this.DC.create(model, objToCreate);
+        create<T>(model: T | any, objToCreate?: T | any, tableName?: string): void {
+          this.DC.create(model, objToCreate, tableName);
         }
       
-        createObs<T>(model: T | any, objToCreate?: T | any): Observable<T | T[]> {
-          return this.DC.createObs(model, objToCreate);
+        createObs<T>(model: T | any, objToCreate?: T | any, tableName?: string): Observable<T | T[]> {
+          return this.DC.createObs(model, objToCreate, tableName);
         }
       
-        createPromise<T>(model: T | any, objToCreate: T | any): Promise<T | any> {
-          return this.DC.createPromise(model, objToCreate);
+        createPromise<T>(model: T | any, objToCreate: T | any, tableName?: string): Promise<T | any> {
+          return this.DC.createPromise(model, objToCreate, tableName);
         }
       
         // READ
-        read<T>(model: T | any, query?: HttpParams | string | any): void {
+        read<T>(model: T | any, query?: HttpParams | string | any, tableName?: string): void {
           this.DR.read(model, query);
         }
       
-        readObs<T>(model: T | any, query?: HttpParams | string | any): Observable<T[]> {
+        readObs<T>(model: T | any, query?: HttpParams | string | any, tableName?: string): Observable<T[]> {
           return this.DR.readObs(model, query);
         }
       
-        readPromise<T>(model: T | any, query?: HttpParams | string | any): Promise<T | any> {
+        readPromise<T>(model: T | any, query?: HttpParams | string | any, tableName?: string): Promise<T | any> {
           return this.DR.readPromise(model, query);
         }
       
         // UPDATE
-        update<T>(model: T | any, objToUpdate: T | any): void {
+        update<T>(model: T | any, objToUpdate: T | any, tableName?: string): void {
           this.DU.update(model, objToUpdate);
         }
       
-        updateObs<T>(model: T | any, objToUpdate: T | any): Observable<T[]> {
+        updateObs<T>(model: T | any, objToUpdate: T | any, tableName?: string): Observable<T[]> {
           return this.DU.updateObs(model, objToUpdate);
         }
       
-        updatePromise<T>(model: T | any, objToUpdate: T | any): Promise<T | any> {
+        updatePromise<T>(model: T | any, objToUpdate: T | any, tableName?: string): Promise<T | any> {
           return this.DU.updatePromise(model, objToUpdate);
         }
       
         // DELETE
-        delete<T>(model: T | any, objToDelete: T | any, stopNotify?: boolean): void {
+        delete<T>(model: T | any, objToDelete: T | any, stopNotify?: boolean, tableName?: string): void {
           this.DD.delete(model, objToDelete, stopNotify);
         }
         
-        deleteObs<T>(model: T | any, objToDelete: T | any): Observable<T[]> {
+        deleteObs<T>(model: T | any, objToDelete: T | any, tableName?: string): Observable<T[]> {
           return this.DD.deleteObs(model, objToDelete);
         }
         
-        deletePromise<T>(model: T | any, objToDelete: T | any): Promise<T | any> {
+        deletePromise<T>(model: T | any, objToDelete: T | any, tableName?: string): Promise<T | any> {
           return this.DD.deletePromise(model, objToDelete);
         }
       }

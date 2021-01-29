@@ -24,12 +24,12 @@ export class DataCreate {
      * @param model The interface / class to construct the query against and build response objects from
      * @param objToCreate The front end object to be created
      */
-    create<T>(model: T | any, objToCreate?: T | any): void  {
+    create<T>(model: T | any, objToCreate?: T | any, tableName?: string): void  {
         this.DS.loadingMap[model.tableName] = true;
 
         const newModelObj = new model(objToCreate);
 
-        const url = `${this.DS.endpoint}${model.tableName}`;
+        const url = `${this.DS.endpoint}${tableName}`;
         this.http.post(url, newModelObj, this.DS.httpOptions)
             .subscribe(
                 (res: any) => {
@@ -44,10 +44,10 @@ export class DataCreate {
             );
     }
 
-    createObs<T>(model: T | any, objToCreate?: T | any): Observable<T | T[]> {
+    createObs<T>(model: T | any, objToCreate?: T | any, tableName?: string): Observable<T | T[]> {
         const newModelObj = new model(objToCreate);
 
-        const url = `${this.DS.endpoint}${model.tableName}`;
+        const url = `${this.DS.endpoint}${tableName}`;
         return this.http.post(url, newModelObj, this.DS.httpOptions)
             .pipe(
                 catchError(handleHttpError),
@@ -58,10 +58,10 @@ export class DataCreate {
             );
     }
 
-    async createPromise<T>(model: T | any, objToCreate: T | any): Promise<T | any> {
+    async createPromise<T>(model: T | any, objToCreate: T | any, tableName?: string): Promise<T | any> {
         const newModelObj = new model(objToCreate);
 
-        const url = `${this.DS.endpoint}${model.tableName}`;
+        const url = `${this.DS.endpoint}${tableName}`;
         try {
             const res = await fetch(url, {
                 method: 'POST',
@@ -80,11 +80,11 @@ export class DataCreate {
         }
     }
 
-    private cacheAndNotifyCreated<T>(model: T | any, newModelObj): void  {
+    private cacheAndNotifyCreated<T>(model: T | any, newModelObj, tableName?: string): void  {
         // Append the new object into the front end cache
         this.DS.cache[model.tableName].push(Object.assign({}, newModelObj));
 
-        this.DS.subjectMap[model.tableName].many.next(this.DS.cache[model.tableName]);
+        this.DS.subjectMap[model.tableName].many.next(this.DS.cache[tableName]);
         this.DS.subjectMap[model.tableName].one.next(newModelObj);
     }
 

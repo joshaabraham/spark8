@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 import { FuseUtils } from '@fuse/utils';
 
-import { Contact } from 'app/main/pages/contacts/contact.model';
+import { Contact } from 'app/main/apps/contacts/contact.model';
 
 @Injectable()
 export class ContactsService implements Resolve<any>

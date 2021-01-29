@@ -12,10 +12,10 @@ import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseWidgetModule } from '@fuse/components/widget/widget.module';
 
 
-import { EcommerceProductsService } from 'app/main/pages/commerce/products/products.service';
-import { EcommerceProductService } from 'app/main/pages/commerce/product/product.service';
-import { EcommerceOrdersService } from 'app/main/pages/commerce/orders/orders.service';
-import { EcommerceOrderService } from 'app/main/pages/commerce/order/order.service';
+import { EcommerceProductsService } from 'app/main/apps/commerce/products/products.service';
+import { EcommerceProductService } from 'app/main/apps/commerce/product/product.service';
+import { EcommerceOrdersService } from 'app/main/apps/commerce/orders/orders.service';
+import { EcommerceOrderService } from 'app/main/apps/commerce/order/order.service';
 
 
 

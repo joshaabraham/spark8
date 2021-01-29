@@ -7,7 +7,7 @@ import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
 import { fuseAnimations } from '@fuse/animations';
 import { FuseUtils } from '@fuse/utils';
 
-import { EcommerceOrdersService } from 'app/main/pages/commerce/orders/orders.service';
+import { EcommerceOrdersService } from 'app/main/apps/commerce/orders/orders.service';
 import { takeUntil } from 'rxjs/internal/operators';
 
 @Component({
