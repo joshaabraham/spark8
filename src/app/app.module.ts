@@ -18,7 +18,6 @@ import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
-import { AuthInterceptor } from './Services/AuthInterceptorService/AuthInterceptor.service';
 import { AppRoutingModule } from './app-routing.module';
 import { DataModule } from './Modules/data/data.module';
 
@@ -59,7 +58,7 @@ import { DataModule } from './Modules/data/data.module';
         AppComponent
     ],
     providers:[
-        {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true},
+        {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     ]
 })
 export class AppModule
