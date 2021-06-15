@@ -20,10 +20,12 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { AppRoutingModule } from './app-routing.module';
 import { DataModule } from './Modules/data/data.module';
+import { InvitationCardComponent } from './app/layout/components/invitation-card/invitation-card.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        InvitationCardComponent
     ],
     imports     : [
         BrowserModule,
@@ -58,7 +60,7 @@ import { DataModule } from './Modules/data/data.module';
         AppComponent
     ],
     providers:[
-        {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+      //  {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     ]
 })
 export class AppModule
