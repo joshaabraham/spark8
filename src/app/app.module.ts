@@ -20,12 +20,11 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { AppRoutingModule } from './app-routing.module';
 import { DataModule } from './Modules/data/data.module';
-import { InvitationCardComponent } from './app/layout/components/invitation-card/invitation-card.component';
+
 
 @NgModule({
     declarations: [
         AppComponent,
-        InvitationCardComponent
     ],
     imports     : [
         BrowserModule,
