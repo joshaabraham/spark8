@@ -10,6 +10,7 @@ import { CommentBlockComponent } from './components/comment-block/comment-block.
 import { MainConteneurComponent } from './components/main-conteneur/main-conteneur.component';
 import { FlagAlertComponent } from './components/flag-alert/flag-alert.component';
 import { SportSearchBlockComponent } from './components/sport-search-block/sport-search-block.component';
+import { DialogConteneurComponent } from './components/dialog-conteneur/dialog-conteneur.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,7 @@ import { SportSearchBlockComponent } from './components/sport-search-block/sport
 
         HorizontalLayout1Module
     ],
-    declarations: [InvitationCardComponent, CommentBlockComponent, MainConteneurComponent, FlagAlertComponent, SportSearchBlockComponent]
+    declarations: [InvitationCardComponent, CommentBlockComponent, MainConteneurComponent, FlagAlertComponent, SportSearchBlockComponent, DialogConteneurComponent]
 })
 export class LayoutModule
 {
