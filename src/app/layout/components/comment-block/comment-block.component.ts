@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentBlock } from './comment-block.model';
 
 @Component({
   selector: 'app-comment-block',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comment-block.component.scss']
 })
 export class CommentBlockComponent implements OnInit {
+
+  CommentBlock: CommentBlock
 
   constructor() { }
 
