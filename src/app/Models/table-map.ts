@@ -4,7 +4,8 @@ export class TableMap {
     static Products = 'Products';
     static Companies = 'Companies';
     static Sellers = 'Sellers';
-    static Login = 'Logins';
+    static Login = 'login';
+    static Register = 'register';
     static Academies = 'Academies';
     static Calendriers = 'Calendriers';
     static CentreSportifs = 'CentreSportifs';
