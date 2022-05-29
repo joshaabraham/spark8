@@ -4,10 +4,12 @@ import { CommentBlockComponent } from './comment-block.component';
 
 
 
+
 @NgModule({
 
     declarations: [
-    CommentBlockComponent],
+    CommentBlockComponent,
+    ],
 
     imports     : [
         CommentBlockTypeModule
