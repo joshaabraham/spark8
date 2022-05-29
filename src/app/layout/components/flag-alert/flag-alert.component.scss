@@ -1,0 +1,27 @@
+.flag_alert {
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 0px;
+    text-align: center;
+  }
+  
+  .icon_flag {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  .img_actionalert {
+    max-height: 70px;
+    max-width: 25px;
+    margin: 2px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    border-radius: 50%;
+  }
