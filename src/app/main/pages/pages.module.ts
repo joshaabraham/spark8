@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { DataModule } from '../../../app/Modules/data/data.module';
+import { LayoutModule } from 'app/layout/layout.module';
+
 
 // const routes = [
 //     {
@@ -35,6 +37,7 @@ import { DataModule } from '../../../app/Modules/data/data.module';
         // RecommandationModule,
         // SocieteModule,
         // SportModule,
+        LayoutModule 
      
     ],
     declarations: [PagesComponent],

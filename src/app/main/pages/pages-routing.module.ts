@@ -12,7 +12,7 @@ const routes: Routes = [
  // { path: '**', component: PageNotFoundComponent },
   { path: '', component: PagesComponent,
     children:[
-      { path: '', redirectTo: 'pages', pathMatch: 'full'},
+      { path: 'pages', redirectTo: 'pages', pathMatch: 'full'},
       { path: 'sport', redirectTo: 'sport', pathMatch: 'full'},
       { path: 'chat', loadChildren: () => import('./chat/chat.module').then(m => m.ChatModule)},
       { path: 'contacts', loadChildren: () => import('../apps/contacts/contacts.module').then(m => m.ContactsModule)},

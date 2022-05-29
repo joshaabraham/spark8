@@ -5,13 +5,17 @@ import { FuseSharedModule } from '@fuse/shared.module';
 
 import { ContentComponent } from 'app/layout/components/content/content.component';
 
+import { MainConteneurModule } from '../main-conteneur/main-conteneur.module';
+
 @NgModule({
     declarations: [
-        ContentComponent
+        ContentComponent, 
     ],
     imports     : [
         RouterModule,
-        FuseSharedModule
+        FuseSharedModule,
+        MainConteneurModule
+
     ],
     exports     : [
         ContentComponent
