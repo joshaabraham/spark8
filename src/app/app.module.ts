@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DataModule } from './Modules/data/data.module';
 
 
+
 @NgModule({
     declarations: [
         AppComponent,
