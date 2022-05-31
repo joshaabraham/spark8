@@ -26,7 +26,7 @@ import { DialogConteneurComponent } from './components/dialog-conteneur/dialog-c
 
         HorizontalLayout1Module
     ],
-    declarations: [InvitationCardComponent, CommentBlockComponent, FlagAlertComponent, SportSearchBlockComponent, DialogConteneurComponent]
+    declarations: [InvitationCardComponent,FlagAlertComponent, SportSearchBlockComponent, DialogConteneurComponent]
 })
 export class LayoutModule
 {

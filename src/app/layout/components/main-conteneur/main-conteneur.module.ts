@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { CommentBlockModule } from '../comment-block/comment-block.module';
 import { MainConteneurComponent } from './main-conteneur.component';
 
-import { CommentBlockModule } from '../comment-block/comment-block.module';
+
 
 @NgModule({
     declarations: [
